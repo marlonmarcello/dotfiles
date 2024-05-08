@@ -3,5 +3,6 @@ if status is-interactive
   eval (zellij setup --generate-auto-start fish | string collect)
 end
 
-fish_config theme choose "Dracula Official"
-atuin init fish | source
+fish_config theme choose "DraculaOfficial"
+
+set fzf_fd_opts --hidden --max-depth 5 -E .git
