@@ -1,15 +1,15 @@
 themes {
     dracula {
-        fg 248 248 242
-        bg 40 42 54
-        black 0 0 0
-        red 255 85 85
-        green 80 250 123
-        yellow 241 250 140
-        blue 98 114 164
-        magenta 255 121 198
-        cyan 139 233 253
-        white 255 255 255
-        orange 255 184 108
+        fg "#44475a"
+        bg "#6272a4"
+        red "#ff5555"
+        green "#bd93f9"
+        yellow "#f1fa8c"
+        blue "#8be9fd"
+        magenta "#ff79c6"
+        orange "#ffb86c"
+        cyan "#8be9fd"
+        black "#50fa7b"
+        white "#44475a"
     }
 }
