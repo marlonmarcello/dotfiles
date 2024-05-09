@@ -1,1 +1,4 @@
-.config/fish/fish_variable
+README.md
+.config/fish/fish_variables
+.config/fish/functions
+!.config/fish/functions/user

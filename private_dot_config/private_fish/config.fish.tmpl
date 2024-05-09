@@ -10,6 +10,10 @@ fish_add_path /opt/homebrew/sbin
 source /opt/homebrew/opt/asdf/libexec/asdf.fish
 {{- end }}
 
+{{- if eq .chezmoi.hostname "marlon-work-mac" }}
+set -gx AWS_PROFILE wtc
+{{- end }}
+
 set -Ux PYENV_ROOT $HOME/.pyenv
 fish_add_path $PYENV_ROOT/bin
 pyenv init - | source

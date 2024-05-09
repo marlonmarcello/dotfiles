@@ -12,7 +12,8 @@ config.tab_bar_at_bottom = true
 config.use_fancy_tab_bar = false
 config.window_decorations = "RESIZE"
 config.font = wezterm.font_with_fallback {
-  "FiraCode Nerd Font"
+  "FiraCode Nerd Font",
+  "Fira Code",
 }
 config.font_size = 14
 config.window_background_opacity = 0.9
