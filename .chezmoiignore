@@ -1,4 +1,4 @@
 README.md
 .config/fish/fish_variables
 .config/fish/functions
-!.config/fish/functions/user
+!.config/fish/functions/m-*
