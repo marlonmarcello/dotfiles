@@ -6,7 +6,7 @@ fish_config theme choose "DraculaOfficial"
 
 set fzf_fd_opts --hidden --max-depth 5 -E .git
 
-alias ns="zellij action close-tab && zellij action new-tab --layout $HOME/.config/zellij/layouts/node.kdl"
+alias ns="zellij action new-tab --layout $HOME/.config/zellij/layouts/node.kdl"
 
 fish_ssh_agent
 
