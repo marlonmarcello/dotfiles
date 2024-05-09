@@ -1,3 +1,14 @@
 [user]
 	name = Marlon Marcello
 	email = {{ .email | quote }}
+
+[pull]
+  rebase = false
+  ff = yes
+
+[push]
+  autosetupremote = true
+  followTags = true
+
+[init]
+  defaultBranch = main
