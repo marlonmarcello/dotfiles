@@ -1,19 +1,27 @@
 layout {
-    pane split_direction="vertical" {
-        pane
-        pane split_direction="horizontal" {
-            pane command="n" {
-                args "auto"
-            }
-            pane command="git" {
-                args "log"
-            }
-        }
-        pane size=1 borderless=true {
-            plugin location="zellij:compact-bar"
-        }
+  pane size=1 borderless=true {
+    plugin location="zellij:compact-bar"
+  }
+ 
+  pane split_direction="vertical" {
+    pane size="15%" focus=true {
+      plugin location="zellij:strider"
     }
-    pane size=2 borderless=true {
-        plugin location="status-bar"
+    
+    pane     
+
+    pane size="30%" split_direction="horizontal" {
+      pane command="n" {
+        args "auto"
+      }
+
+      pane command="git" {
+        args "log"
+      }
     }
+  }
+
+  pane size=2 borderless=true {
+    plugin location="status-bar"
+  }
 }
