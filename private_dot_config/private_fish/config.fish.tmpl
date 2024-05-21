@@ -37,3 +37,6 @@ alias ns="zellij action new-tab --layout $HOME/.config/zellij/layouts/node.kdl"
 if not string match -q -- "$HOME/bin" $PATH
   set -gx PATH $PATH "$HOME/bin"
 end
+
+alias ls="eza -l --grid --icons"
+alias tree="eza -T --icons"

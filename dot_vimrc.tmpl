@@ -6,3 +6,7 @@ set autoindent
 set mouse=a
 syntax enabled
 colorscheme dracula
+
+{{- if eq .chezmoi.os "darwin" }}
+set rtp+=/opt/homebrew/opt/fzf
+{{- end }}
