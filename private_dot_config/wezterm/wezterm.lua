@@ -15,7 +15,7 @@ config.font = wezterm.font_with_fallback {
   "FiraCode Nerd Font",
   "Fira Code",
 }
-config.font_size = 12
+config.font_size = 16
 config.window_background_opacity = 1
 config.hide_tab_bar_if_only_one_tab = true
 config.show_new_tab_button_in_tab_bar = false
