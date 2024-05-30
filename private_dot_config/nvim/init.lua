@@ -21,14 +21,27 @@ require("lazy").setup({
     "ThePrimeagen/vim-be-good",
     lazy = false 
   },
+  -- add dracula
   {
-    "folke/tokyonight.nvim",
-    lazy = false, -- make sure we load this during startup if it is your main colorscheme
-    priority = 1000, -- make sure to load this before all the other start plugins
+    "Mofiqul/dracula.nvim",
+    lazy =  false,
+    priority = 1000,
     config = function()
-      -- load the colorscheme here
-      vim.cmd([[colorscheme tokyonight]])
+      vim.cmd([[colorscheme dracula]])
     end,
   },
+  {
+    "nvim-treesitter/nvim-treesitter",
+    build = ":TSUpdate",
+    config = function () 
+      local configs = require("nvim-treesitter.configs")
 
+      configs.setup({
+          ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "javascript", "html", "css", "scss", "typescript", "terraform", "yaml", "markdown", "prisma", "graphql", "fish", "gitignore", "glsl", "json" },
+          sync_install = false,
+          highlight = { enable = true },
+          indent = { enable = true },  
+        })
+    end
+  }
 })
