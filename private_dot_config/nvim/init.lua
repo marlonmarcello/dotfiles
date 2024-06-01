@@ -1,3 +1,4 @@
+-- loads base vim settings
 vim.cmd([[
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath = &runtimepath
@@ -15,13 +16,10 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
     lazypath,
   })
 end
+
 vim.opt.rtp:prepend(lazypath)
+
 require("lazy").setup({
-  { 
-    "ThePrimeagen/vim-be-good",
-    lazy = false 
-  },
-  -- add dracula
   {
     "Mofiqul/dracula.nvim",
     lazy =  false,
@@ -30,6 +28,7 @@ require("lazy").setup({
       vim.cmd([[colorscheme dracula]])
     end,
   },
+
   {
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate",
