@@ -24,6 +24,8 @@ set -x N_PREFIX "$HOME/n"; contains "$N_PREFIX/bin" $PATH; or set -a PATH "$N_PR
 
 fzf --fish | source
 
+zoxide init fish | source
+
 set -gx EDITOR nvim
 
 set -gx VISUAL nvim
@@ -42,3 +44,7 @@ end
 
 alias ls="eza -l --grid --icons"
 alias tree="eza -T --icons"
+
+alias cat="bat"
+
+alias cd="zoxide"
