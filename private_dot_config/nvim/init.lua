@@ -34,7 +34,7 @@ require("lazy").setup({
 
   {
     "nvim-tree/nvim-tree.lua",
-    event = { "BufReadPre", "BufNewFile", },
+    event = { "BufReadPre", "BufEnter", "BufNewFile", },
     dependencies = "nvim-tree/nvim-web-devicons",
     config = function()
       local nvimtree = require("nvim-tree")
@@ -144,7 +144,7 @@ require("lazy").setup({
 
   {
     "nvim-telescope/telescope.nvim",
-    branch = "0.1.x",
+    tag = "0.1.8",
     dependencies = {
       "nvim-lua/plenary.nvim",
       { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
@@ -181,10 +181,10 @@ require("lazy").setup({
 
   {
     "lukas-reineke/indent-blankline.nvim",
-    event = { "BufReadPre", "BufNewFile" },
+    event = { "BufReadPre", "BufEnter", "BufNewFile" },
     main = "ibl",
     opts = {
-      indent = { char = "" },
+      indent = { char = "┊" },
     },
   },
 
