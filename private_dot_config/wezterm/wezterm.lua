@@ -1,5 +1,5 @@
 -- Pull in the wezterm API
-local wezterm = require 'wezterm'
+local wezterm = require("wezterm")
 
 -- This will hold the configuration.
 local config = wezterm.config_builder()
@@ -7,14 +7,14 @@ local config = wezterm.config_builder()
 -- This is where you actually apply your config choices
 
 -- For example, changing the color scheme:
-config.color_scheme = "dracula"
+config.color_scheme = "tokyonight_night"
 config.tab_bar_at_bottom = true
 config.use_fancy_tab_bar = false
 config.window_decorations = "RESIZE"
-config.font = wezterm.font_with_fallback {
-  "FiraCode Nerd Font",
-  "Fira Code",
-}
+config.font = wezterm.font_with_fallback({
+	"FiraCode Nerd Font",
+	"Fira Code",
+})
 config.font_size = 14
 config.window_background_opacity = 1
 config.hide_tab_bar_if_only_one_tab = true
