@@ -53,4 +53,6 @@ alias cat="bat"
 
 alias cd="z"
 
-alias wwe="linux-wallpaperengine --silent --fps 30 /mnt/fast/SteamLibrary/steamapps/workshop/content/431960/$1"
+function wwe
+  linux-wallpaperengine --silent --fps 30 --assets-dir /mnt/fast/SteamLibrary/steamapps/common/wallpaper_engine/assets /mnt/fast/SteamLibrary/steamapps/workshop/content/431960/$argv
+end
