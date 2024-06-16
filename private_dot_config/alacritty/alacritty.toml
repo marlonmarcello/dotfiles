@@ -1,0 +1,25 @@
+[cursor.style]
+shape = "Underline"
+
+[cursor.vi_mode_style]
+shape = "Block"
+
+[env]
+TERM = "xterm-256color"
+
+[font.normal]
+family = "FiraCode Nerd Font"
+style = "regular"
+
+[font]
+size = 12
+
+[shell]
+program = "/bin/fish"
+
+[window]
+opacity = 0.900000
+
+[window.padding]
+x = 10
+y = 10
