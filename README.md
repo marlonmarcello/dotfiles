@@ -1,7 +1,7 @@
 ## Install required packages
 
 ```sh
-yay -S fzf fd bat eza zoxide fastfetch pyenv rustup rbenv fish fisher docker docker-compose terraform enpass brave-bin chezmoi lazygit vial-appimage
+yay -S fzf fd bat eza zoxide fastfetch pyenv rustup rbenv fish fisher docker docker-compose terraform enpass brave-bin chezmoi lazygit vial-appimage atuin zellij alacritty dunst hyprland hyprpaper waybar hypridle hyprlock
 ```
 
 ## Install fish plugins
